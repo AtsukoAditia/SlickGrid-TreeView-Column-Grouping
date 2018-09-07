@@ -1,7 +1,7 @@
 manyamSlickGrid
 --------------
-### SlickGrid based TreeView and Column Grouping with automatic parent child relationship creation
-SlickGrid TreeView combined with Column Grouping feature with advanced JSON processing and aggregations.
+### SlickGrid based TreeView and Column Grouping
+manyamSlickGrid born from SlickGrid TreeView combined with Column Grouping feature with advanced JSON processing, aggregations and automatic parent child relationship creation.
 
 Why manyamSlickGrid exists - 
 1. Ag-grid enterprise (a beautiful plugin in Javascript, Angular, and many more) is not open sourced and I could not find better plugin than SlickGrid with powerful features yet lot of additional work was needed to get the desired output.
