@@ -19,12 +19,12 @@ Getting started
 --------------
 
 #### Download
-Download the zip file from GitHub
+Download the zip file from GitHub and include it in your project.
 
 #### Add all the required files
-Refer index.html and add all the required files into your HTML file
+Refer index.html and refer all the required files into your HTML file.
 
-#### Add a div element with id. This is where the grid is generated
+#### Add a div element with id. This is where the grid is generated.
 ```html
 <table width="100%">
   <tr>
@@ -47,9 +47,9 @@ manyamGrid.generateTreeTable(params);
 Features
 --------------
 
-Besides the standard set of features that SlickGrid provides, manayamSlickGrid provides the following for TreeView - 
+Besides the standard set of features that SlickGrid provides for TreeView, manayamSlickGrid provides the following for TreeView - 
 
-Consider employee JSON object with the follwoing fields where - 
+Consider employee JSON object with the following fields - 
 * String fields - first_name, last_name, company_name, address, city, county, state, phone1, phone2, email, web
 * Float fields - salary_per_month, min_wage, age (my bad that it's a float)
 * Int fields - children, vehicles_owned
@@ -97,7 +97,7 @@ Consider employee JSON object with the follwoing fields where -
 ```
 ### Row grouping
 
-Specify the row grouping needed from your data.
+Specify the row grouping needed in your data. Order in which you provide the keys is the order in which data tree is created.
 For example - I want to group the above data by county, then by state, then by city, then by company_name and finally by first_name.
 ```javascript
 params['rowGroups'] = ["county", "state", "city", "company_name", "first_name"];
@@ -105,7 +105,7 @@ params['rowGroups'] = ["county", "state", "city", "company_name", "first_name"];
 
 ### Aggregations
 
-Specify the aggregations you want on your integer data fields. For example in the above data, I want to see the following aggregations on the fields - 
+Specify the aggregations you want on your number data fields. For example in the above data, I want to see the following aggregations on the fields - 
 * salary_per_month - sum
 * min_wage - min
 * age - mean
@@ -124,7 +124,7 @@ params['aggregations'] = {
 
 ### Column grouping
 
-Specify the column grouping (only in header, similar to colspan) needed on your data. For example, I want to group salary related fields together and personal fields togther.
+Specify the column grouping (only in header, similar to colspan) needed on your data. For example, I want to group salary related fields together and personal fields together.
 
 ```javascript
 params['columnGroups'] = {
